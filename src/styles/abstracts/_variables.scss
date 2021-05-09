@@ -1,0 +1,42 @@
+// colors
+$color-accent-primary: rgb(255, 67, 81);
+$color-accent-secondary: rgb(0, 190, 218);
+
+$color-text-primary: $color-accent-primary;
+$color-text-secondary: $color-accent-secondary;
+
+$color-text-regular: rgb(62, 62, 62);
+$color-text-highlight: rgb(255, 255, 255);
+
+$color-background-primary: rgb(229, 244, 255);
+$color-background-secondary: #ffffff;
+
+// border radius
+$border-radius-round: 50%;
+
+$border-radius-huge: 4rem;
+$border-radius-medium: 3rem;
+$border-radius-regular: 2rem;
+$border-radius-small: 1.1rem;
+
+// font-size
+$font-size-super: 5rem;
+$font-size-large: 4.2rem;
+$font-size-huge: 3.6rem;
+$font-size-medium: 2.4rem;
+$font-size-small: 1.8rem;
+$font-size-tiny: 1.4rem;
+
+// shadows
+$shadow-small: 0rem 0rem 1.9rem 0.1rem rgba(0, 0, 0, 0.2);
+$shadow-text: 0 0.4rem 0.8rem #32261a;
+
+// max width break-points
+
+// desktop - laptop - tablet
+$break-point-1: 1550px;
+$break-point-2: 1390px;
+$break-point-3: 1180px;
+
+// tablet - mobile
+$break-point-4: 1050px;
