@@ -4,7 +4,7 @@ import 'styles/main.scss';
 import App from './App';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/">
     <App />
   </BrowserRouter>,
   document.getElementById('root')
