@@ -10,6 +10,7 @@ $color-text-highlight: rgb(255, 255, 255);
 
 $color-background-primary: rgb(229, 244, 255);
 $color-background-secondary: #ffffff;
+$color-background-modal: rgba(0, 0, 0, 0.6);
 
 // border radius
 $border-radius-round: 50%;
@@ -18,6 +19,7 @@ $border-radius-huge: 4rem;
 $border-radius-medium: 3rem;
 $border-radius-regular: 2rem;
 $border-radius-small: 1.1rem;
+$border-radius-tiny: 0.5rem;
 
 // font-size
 $font-size-super: 5rem;
@@ -33,10 +35,10 @@ $shadow-text: 0 0.4rem 0.8rem #32261a;
 
 // max width break-points
 
-// desktop - laptop - tablet
-$break-point-1: 1550px;
-$break-point-2: 1390px;
-$break-point-3: 1180px;
-
-// tablet - mobile
-$break-point-4: 1050px;
+// desktop - laptop - tablet - mobile
+$break-point-1: 1300px;
+$break-point-2: 1200px;
+$break-point-3: 680px;
+$break-point-4: 580px;
+$break-point-5: 450px;
+$break-point-6: 360px;

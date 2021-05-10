@@ -1,0 +1,52 @@
+.title {
+  &-light {
+    color: $color-text-highlight;
+  }
+
+  &-dark {
+    color: $color-text-regular;
+  }
+
+  &-capitalize {
+    text-transform: capitalize;
+  }
+
+  &-huge {
+    font-weight: 600;
+    font-size: 4rem;
+
+    @media (max-width: $break-point-3) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: $break-point-5) {
+      font-size: 2rem;
+    }
+  }
+
+  &-medium {
+    font-weight: 400;
+    font-size: 3rem;
+
+    @media (max-width: $break-point-3) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: $break-point-5) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-small {
+    font-weight: 300;
+    font-size: 2rem;
+
+    @media (max-width: $break-point-3) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: $break-point-5) {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,18 +1,30 @@
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import AppRoutes from 'services/routes/AppRoutes';
 
-function App() {
+const LOCAL_STORAGE_KEY = 'contact-login';
+
+const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (window.localStorage.getItem(LOCAL_STORAGE_KEY)) {
+      setIsLoggedIn(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isLoggedIn) {
+      window.localStorage.setItem(LOCAL_STORAGE_KEY, `${new Date()}`);
+    } else {
+      window.localStorage.removeItem(LOCAL_STORAGE_KEY);
+    }
+  }, [isLoggedIn]);
+
   return (
-    <div className="App">
-      <Link to="/" style={{ fontSize: '20px', display: 'block' }}>
-        Login
-      </Link>
-      <Link to="/home" style={{ fontSize: '20px', display: 'block' }}>
-        Home
-      </Link>
-      <AppRoutes isLoggedIn={true} />
+    <div className="screen">
+      <AppRoutes isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
     </div>
   );
-}
+};
 
 export default App;

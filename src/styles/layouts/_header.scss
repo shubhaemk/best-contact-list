@@ -1,0 +1,18 @@
+.header-container {
+  width: 100%;
+  height: 10rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: $color-accent-primary;
+
+  @media (max-width: $break-point-3) {
+    height: 8rem;
+  }
+
+  @media (max-width: $break-point-5) {
+    height: 6rem;
+  }
+}

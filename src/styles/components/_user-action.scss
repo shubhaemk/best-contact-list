@@ -1,0 +1,20 @@
+.user-action {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media (max-width: $break-point-2) {
+    justify-content: space-between;
+  }
+  & > * {
+    &:not(:last-child) {
+      margin-right: 2rem;
+
+      @media (max-width: $break-point-2) {
+        margin-right: 0rem;
+      }
+    }
+  }
+}

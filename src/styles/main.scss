@@ -1,14 +1,29 @@
 //  abstracts - may include but not limited to variables, mixins
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
+@import './abstracts/variables';
+@import './abstracts/mixins';
 
 // base styling
-@import "./base/reset";
+@import './base/reset';
+
+// global styling
+@import './global/padding';
+
+// screens styling
+@import './screens/screen';
+@import './screens/home-screen';
+@import './screens/loading-screen';
+@import './screens/error-screen';
+@import './screens/not-found-screen';
+@import './screens/login-screen';
 
 // layouts
-@import "./layouts/screen";
-@import "./layouts/feed";
-@import "./layouts/header";
+@import './layouts/feed';
+@import './layouts/header';
 
 // components
-@import "./components/user-card";
+@import './components/user-card';
+@import './components/title';
+@import './components/button';
+@import './components/icon';
+@import './components/user-action';
+@import './components/input';

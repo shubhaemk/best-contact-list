@@ -4,7 +4,13 @@ import { RouteInfoList } from './configuration/route-info-list';
 
 import { isLoggedInType } from './types/route-type';
 
-const AppRoutes = ({ isLoggedIn }: { isLoggedIn: isLoggedInType }) => {
+const AppRoutes = ({
+  isLoggedIn,
+  setIsLoggedIn,
+}: {
+  isLoggedIn: isLoggedInType;
+  setIsLoggedIn: (isLoggedIn: boolean) => void;
+}) => {
   return (
     <Switch>
       {RouteInfoList.map((info) => {
@@ -12,7 +18,7 @@ const AppRoutes = ({ isLoggedIn }: { isLoggedIn: isLoggedInType }) => {
 
         const _routeRender = (props: RouteProps) => {
           return (isLoggedIn && isProtected) || (!isLoggedIn && !isProtected) || !fallbackTo ? (
-            <RouteComponent {...props} />
+            <RouteComponent {...props} setIsLoggedIn={setIsLoggedIn} />
           ) : (
             <Redirect
               to={{

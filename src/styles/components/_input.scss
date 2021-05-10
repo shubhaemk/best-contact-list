@@ -1,0 +1,17 @@
+.input {
+  display: flex;
+  flex-direction: column;
+
+  & > * {
+    margin-bottom: 1rem;
+  }
+
+  &-value {
+    height: 5rem;
+    width: 30rem;
+
+    font-size: $font-size-medium;
+
+    border-radius: $border-radius-small;
+  }
+}
