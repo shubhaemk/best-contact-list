@@ -8,7 +8,7 @@ const LoginScreen = (props: any) => {
   const [error, setError] = useState<string | null>(null);
 
   const loginHandler = () => {
-    if (email.trim() === password.trim() && email.trim() !== '') {
+    if (email.trim() === 'foo' && password.trim() === 'bar') {
       props.setIsLoggedIn(true);
     } else {
       setError('Enter valid Email and Password!');
