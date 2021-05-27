@@ -19,6 +19,8 @@ const App = () => {
       window.localStorage.removeItem(LOCAL_STORAGE_KEY);
     }
   }, [isLoggedIn]);
+  
+  console.log("Doing this for PR");
 
   return (
     <div className="screen">
